@@ -24,3 +24,9 @@ from https://arxiv.org/pdf/2206.14987.pdf
 ![image](https://user-images.githubusercontent.com/8619934/177660708-1d123a46-c0ee-4264-96b8-42ebb60560d2.png)
 
 ![image](https://user-images.githubusercontent.com/8619934/219104594-7016fc45-0dba-4fb5-8404-3fb671f159f5.png)
+
+
+https://twitter.com/jbhuang0604/status/1626372600824844289?s=21
+
+
+https://twitter.com/sarahookr/status/1625612596056555520?s=21
