@@ -273,3 +273,11 @@ but it will avail nothing
 
 but also solves the label bias problem in a principled way.
 
+however, such models ..., resulting in limited performance gain.
+
+.. designed for formal content rather than the looser, noisier, more disfluent style of spoken content.
+
+user's location visitations and online content consumption ...
+
+{(s,e) | s\in\mathcal{S}, e\in\mathcal{E}}
+
