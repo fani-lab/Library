@@ -144,3 +144,99 @@ Also, you can get it by this command:
     2. Activate the environment: `source ENV/bin/activate`
 
 **Note:** Although you might experience many timeouts while uploading or working with clusters using the university's network, the best setting based on my experience is using VPN on securelogin, and external. 
+
+> You should do the above steps as a necessary task for deploying your project. However, there is no need to redo them each time you want to execute your code. The following part shows how to run your code on the server as a job.
+
+## Execute Project
+To submit your project as a job to the server, you have to specify the time and other resources you need in a bash script. For example: 
+
+```
+#!/bin/bash 
+
+
+##setup the env 
+
+module load python/3.8; 
+
+module load scipy-stack; 
+
+source env_opentf/bin/activate; 
+
+pip install --no-index --upgrade pip; 
+ 
+
+# SBATCH --time=20:00:00 
+
+# SBATCH --account=def-hfani 
+
+# SBATCH --gpus-per-node=2 
+
+# SBATCH --mem=64000M 
+
+# SBATCH --mail-user=hfani@uwindsor.ca 
+
+# SBATCH --mail-type=ALL 
+ 
+
+python main.py -arg0 ‘argv0’ 
+```
+
+**Note:** If you want to download from the internet, Remove the -–no-index when installing pip modules. The -–no-index refer to you not using any index to fetch your modules except the ones provided by _Compute Canada_.
+
+***IMPORTANT NOTE:*** _Some bash commands should be entered in the command line instead of the bash file to affect the result._ Read the **Submit Job** section for more information.
+
+Refer [here](https://docs.alliancecan.ca/wiki/Running_jobs) for detailed explanations and examples.
+
+### Submit Job
+
+To request for the resources and schedule a job for execution:
+
+```
+[name@server ~]$ sbatch computecanada.sh
+```
+
+As we metioned, _Some bash commands should be entered in the command line instead of the bash file to affect the result._
+
+For example, if you want to run a job with `40 cpus`, `20 hour` time limit, `64GB ram`, and you want to get your email notifications to `johndoe@uwindsor.ca` you have to use this command (if the name of your bash file is computecanada.sh): 
+
+```
+[name@server ~]$ sbatch --time=20:00:00 --mem=64000M --mail-user=johndoe@uwindsor.ca --mail-type=ALL --cpus-per-task=40 computecanada.sh 
+```
+
+If you want to use GPU instead, you have to use `--gpus-per-node=2` (if you want 2 GPUs).
+
+Certainly, you should first check whether gpu is available. For example, if you use _torch_, you can use `torch.cuda.is_available()` as a manual check.
+
+We will add our experience of executing project on gpu on Compute Canada here, soon.
+
+
+
+> Finally, you are executing your project on the server as a job. The next issue is that you are curious about the status of the job or the output and results. So, you need to know how to monitor progress.
+
+## Monitor Progress
+After submitting a job, you can monitor the progress and results with different tools.
+
+### Check Status
+The general command for checking the status of _Slurm_ jobs is `squeue`, but by default it supplies information about _all_ jobs in the system, not just your own. You can use the shorter `sq` to list only your own jobs:
+```
+$ sq
+  JOBID    USER     ACCOUNT     NAME      ST   TIME_LEFT   NODES  CPUS    GRES     MIN_MEM    NODELIST (REASON) 
+
+  123456   smithj   def-smithj  simple_j  R    0:03        1      1       (null)   4G cdr234  (None) 
+
+  123457   smithj   def-smithj  bigger_j  PD   2-00:00:00  1      16      (null)   16G        (Priority)
+```
+
+The `ST column` of the output shows _the status of each job_. The two most common states are `"PD"` for "pending" or `"R"` for "running".
+
+### Output
+By default the output is placed in a file named `"slurm-"`, suffixed with the `job ID number` and `".out"`, e.g. _slurm-123456.out_, **in the directory from which the job was submitted**. Having the job ID as part of the file name is convenient for troubleshooting. A different name or location can be specified if your workflow requires it by using the `--output` directive.
+
+_Slurm_ files are similar to log files, you can examine those in order to find issues or track the output of your program. 
+
+**Helpful Command:** You can use `tail` command to read _the last part of our log file_. For example, to read last 50 lines of _slurm-123.out_ you can use the following command:
+```
+[name@server ~]$ tail -f -n 50 slurm-123.out 
+```
+
+ 
