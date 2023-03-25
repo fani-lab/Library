@@ -14,12 +14,12 @@ Click [here](https://ccdb.computecanada.ca/account_application) and do it as fol
 <img src="https://user-images.githubusercontent.com/38455739/227584074-6b5b29c7-e8ab-4063-b474-7ba3ba4713a6.png"  width="600" height="300">
 </p>
 
-4. Then enter your institution information: 
+4. Then, enter your institution information: 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/38455739/227585750-a0dfd05a-bc55-4bd2-8b01-9e8de2df7165.png"  width="600" height="400">
 </p>
 
-**Note**: as a student You must enter the CCRI of your sponsor or supervisor. They will be asked to confirm your role. Your sponsor can find their CCRI on their login page at [https://ccdb.computecanada.ca/](https://ccdb.computecanada.ca/). A CCRI is an identifier of the form `abc-123-01`.
+**Note**: As a student, you must enter the CCRI of your sponsor or supervisor. They will be asked to confirm your role. Your sponsor can find their CCRI on their login page at [https://ccdb.computecanada.ca/](https://ccdb.computecanada.ca/). A CCRI is an identifier of the form `abc-123-01`.
 
 5. Final step is determining a username and password:
 
@@ -27,7 +27,9 @@ Click [here](https://ccdb.computecanada.ca/account_application) and do it as fol
 <img src="https://user-images.githubusercontent.com/38455739/227587778-2fbfe34a-0277-4744-a809-0ce14b1dfadc.png"  width="600" height="400">
 </p>
 
-> Now you can sign in.
+
+
+> Now, you can sign in.
 ## Login
 1. Sign in with your username and password.
 
@@ -44,11 +46,13 @@ Click [here](https://ccdb.computecanada.ca/account_application) and do it as fol
 
 If you are not a student: There will be a couple of computing servers (clusters) with different names and their specifications can be found [here](https://cc.sillmedia.com/services/computing-services/clusters/). Proper choice should be made based on their technical details etc.
 
+
+
 > Then you want to connect to your available servers.
 ## Connect to Servers
 There are two ways to connect to a server:
 1. Traditionally use _SSH_ and Windows command prompt or Linux's terminal. Host address (or remote host) will be `{name_of_the_server}.computecanada.ca`  and the username/password is the same as your account. 
-2. There are tools that make this process easier by providing GUI and other features. Our choices are _MobaXterm_ for SSH client and _WinSCP_ for file transferring (_FileZilla_ is also a good choice). 
+2. There are tools that make this process easier by providing GUI and other features. Our choices are [_MobaXterm_](https://mobaxterm.mobatek.net/) for SSH client and [_WinSCP_](https://winscp.net/eng/index.php) for file transferring ([_FileZilla_](https://filezilla-project.org/) is also a good choice). 
 
 Here is a simple instruction of how to use [_MobaXterm_](https://mobaxterm.mobatek.net/download.html) for connecting to a server:
 
@@ -74,7 +78,7 @@ Here is a simple instruction of how to use [_MobaXterm_](https://mobaxterm.mobat
 
 5. Enter your Username and Password if requested in the opened terminal.
 
-Before Deploying the project, we need to upload our project files onto the server.
+Before Deploying the project, you need to upload your project files to the server.
 
 Most of the servers have a projects directory. Using _MobaXterm_, after connecting to the server, you can open it and upload your files with `drag and drop` or via `upload buttons`.
 
@@ -102,11 +106,41 @@ As you can see on the left side you have your system directories.
 <img src="https://user-images.githubusercontent.com/38455739/227689947-497269d9-d2d2-4098-8246-3b32eb578248.png"  width="600" height="400">
 </p>
 
+
+
 > Now that you are connected to the server, and ready to enter your commands, it's time to deploy your project on the server.
 
+## Deploy Project
 
+For making your project available on server, ready to run and utilize, after uploading the project to the server of choice, you must _create a virtual environment_:
 
+1. First, you have to choose a Python version to load, based on your project and supported versions by _Compute Canada_. List of the supported versions is available [here](https://docs.alliancecan.ca/wiki/Python#Loading_an_interpreter).
+Also, you can get it by this command: 
+```
+[name@server ~]$ module avail python
+```
+2. Load desired python version (e.g., 3.10): 
+```
+[name@server ~]$ module load python/3.10 
+```
+3. Create a virtual environment using Python module that you loaded (`project_name` is the name of the directory for your new environment): 
+```
+[name@server ~]$ virtualenv --no-download {project_name}
+```
+4. Activate the virtual environment: 
+```
+[name@server ~]$ source ENV/bin/activate
+```
+5. Upgrade pip in the environment: 
+```
+[name@server ~]$ pip install --no-index --upgrade pip
+```
+6. Exit the virtual environment, simply enter the command deactivate: 
+```
+(ENV) [name@server ~] deactivate 
+```
+7. You can now use the same virtual environment over and over again. Each time: 
+    1. Load the same environment modules that you loaded when you created the virtual environment, e.g: `module load python scipy-stack`
+    2. Activate the environment: `source ENV/bin/activate`
 
-
-
-
+**Note:** Although you might experience many timeouts while uploading or working with clusters using the university's network, the best setting based on my experience is using VPN on securelogin, and external. 
