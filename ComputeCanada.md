@@ -45,4 +45,68 @@ Click [here](https://ccdb.computecanada.ca/account_application) and do it as fol
 If you are not a student: There will be a couple of computing servers (clusters) with different names and their specifications can be found [here](https://cc.sillmedia.com/services/computing-services/clusters/). Proper choice should be made based on their technical details etc.
 
 > Then you want to connect to your available servers.
+## Connect to Servers
+There are two ways to connect to a server:
+1. Traditionally use _SSH_ and Windows command prompt or Linux's terminal. Host address (or remote host) will be `{name_of_the_server}.computecanada.ca`  and the username/password is the same as your account. 
+2. There are tools that make this process easier by providing GUI and other features. Our choices are _MobaXterm_ for SSH client and _WinSCP_ for file transferring (_FileZilla_ is also a good choice). 
+
+Here is a simple instruction of how to use [_MobaXterm_](https://mobaxterm.mobatek.net/download.html) for connecting to a server:
+
+1. Open a session by clicking `session button` on the top left corner as follows:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38455739/227680488-774403ca-aa30-46d5-8e4f-3c2107d99d7b.png"  width="600" height="100">
+</p>
+
+2. Click `SSH button`.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38455739/227680481-7a97d204-0f59-4ee6-b17c-0349082125e1.png"  width="600" height="400">
+</p>
+
+3. Enter your `Remote Host` and `Username` as follows:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38455739/227680492-67cb0174-0d31-43ed-aad3-f9c46d9419d6.png"  width="600" height="400">
+</p>
+
+4. click `OK`.
+
+5. Enter your Username and Password if requested in the opened terminal.
+
+Before Deploying the project, we need to upload our project files onto the server.
+
+Most of the servers have a projects directory. Using _MobaXterm_, after connecting to the server, you can open it and upload your files with `drag and drop` or via `upload buttons`.
+
+We recommend using [_WinSCP_](https://winscp.net/eng/download.php) especially if your files are huge. It will be also helpful when you want to download the outputs too.
+
+Here is a simple instruction of how to use [_WinSCP_](https://mobaxterm.mobatek.net/download.html) for connecting to a server for transferring your files:
+
+1. After opening the app, click on the `New Session` button or click `session` on the navigation bar and then select `New Session`. (You can also use this shortcut: `Ctrl+N`)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38455739/227682413-e57ae395-a02e-44a4-88ac-dbd8ef7de65a.png"  width="600" height="400">
+</p>
+
+As you can see on the left side you have your system directories.
+
+2. Enter your `Remote Host`, `Username`, and `Password` and then click `Login` as follows:
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38455739/227689340-ba9d300b-9bd8-41ae-b7a9-be7842ac6a96.png"  width="600" height="400">
+</p>
+
+3. After connection, you have the server files and directories on the right side. So, you can transfer your files between your system and server or vice versa.
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/38455739/227689947-497269d9-d2d2-4098-8246-3b32eb578248.png"  width="600" height="400">
+</p>
+
+> Now that you are connected to the server, and ready to enter your commands, it's time to deploy your project on the server.
+
+
+
+
+
+
 
