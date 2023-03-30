@@ -229,6 +229,24 @@ $ sq
 
 The `ST column` of the output shows _the status of each job_. The two most common states are `"PD"` for "pending" or `"R"` for "running".
 
+### Using Multiprocessing Module in Python
+Compute Canada servers run with Linux which by default uses the fork method to run your multiprocessing. This should be of no problem if you are running independant methods. But when passing partial for computation, you need to have `spawn` method enabled. Its a best practice to fetch the number of cpus from the environmental variables stored in the compute nodes rather than specifying them manually
+
+Example python code to call a search method for retrieval computation:
+
+``` python
+from multiprocessing import freeze_support,get_context
+ncpus = int(os.environ.get('SLURM_CPUS_PER_TASK',default=1))
+...
+
+if __name__ == '__main__':
+    freeze_support()
+    mp.set_start_method('spawn')
+    with get_context('spawn').Pool(ncpus) as p:
+      p.starmap(partial(search, ranker=ranker, topk=topk, batch=settings['batch']),file_changes)
+```
+
+
 ### Output
 By default the output is placed in a file named `"slurm-"`, suffixed with the `job ID number` and `".out"`, e.g. _slurm-123456.out_, **in the directory from which the job was submitted**. Having the job ID as part of the file name is convenient for troubleshooting. A different name or location can be specified if your workflow requires it by using the `--output` directive.
 
