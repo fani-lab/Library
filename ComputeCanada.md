@@ -123,13 +123,13 @@ Also, you can get it by this command:
 ```
 [name@server ~]$ module load python/3.10 
 ```
-3. Create a virtual environment using Python module that you loaded (`project_name` is the name of the directory for your new environment): 
+3. Create a virtual environment using Python module that you loaded (`project_name_env` is the name of the directory for your new environment): 
 ```
-[name@server ~]$ virtualenv --no-download {project_name}
+[name@server ~]$ virtualenv --no-download {project_name_env}
 ```
 4. Activate the virtual environment: 
 ```
-[name@server ~]$ source ENV/bin/activate
+[name@server ~]$ source {project_name_env}/bin/activate
 ```
 5. Upgrade pip in the environment: 
 ```
@@ -137,11 +137,11 @@ Also, you can get it by this command:
 ```
 6. Exit the virtual environment, simply enter the command deactivate: 
 ```
-(ENV) [name@server ~] deactivate 
+({project_name_env}) [name@server ~] deactivate 
 ```
 7. You can now use the same virtual environment over and over again. Each time: 
     1. Load the same environment modules that you loaded when you created the virtual environment, e.g: `module load python scipy-stack`
-    2. Activate the environment: `source ENV/bin/activate`
+    2. Activate the environment: `source {project_name_env}/bin/activate`
 
 **Note:** Although you might experience many timeouts while uploading or working with clusters using the university's network, the best setting based on my experience is using VPN on securelogin, and external. 
 
@@ -154,13 +154,13 @@ To submit your project as a job to the server, you have to specify the time and 
 #!/bin/bash 
 
 
-##setup the env 
+##setup the environment
 
 module load python/3.8; 
 
 module load scipy-stack; 
 
-source env_opentf/bin/activate; 
+source {project_name_env}/bin/activate; 
 
 pip install --no-index --upgrade pip; 
  
