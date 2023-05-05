@@ -141,7 +141,7 @@ Also, you can get it by this command:
 ```
 7. You can now use the same virtual environment over and over again. Each time: 
     1. Load the same environment modules that you loaded when you created the virtual environment, e.g: `module load python scipy-stack`
-    2. Activate the environment: `source ENV/bin/activate`
+    2. Activate the environment: `source {project_name_env}/bin/activate`
 
 **Note:** Although you might experience many timeouts while uploading or working with clusters using the university's network, the best setting based on my experience is using VPN on securelogin, and external. 
 
