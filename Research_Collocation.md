@@ -281,3 +281,10 @@ user's location visitations and online content consumption ...
 
 {(s,e) | s\in\mathcal{S}, e\in\mathcal{E}}
 
+ Owing to space limitations, ...  this manuscript exclusively considers those works dealing with interdisciplinary machine learning research for ...; works that did not employ machine learning models, as well as
+those published before the 2000s, were excluded.
+
+Our goal is twofold: firstly, we seek to address ...; secondly, ....
+
+To best undertake our review work, we designed a taxonomy (Figure 2) following the different, but not necessarily sequential, steps involved in the study of ...
+documents:
