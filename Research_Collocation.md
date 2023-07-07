@@ -43,6 +43,15 @@ rank atop of the other., Overlook, Fall short, Incorporate, Employ, Leverage<spa
 
 ## Phrases
 
+Existing approaches to * suffer from a lack of efficiency in model size and computational requirements, limiting their applicability
+in real-world settings. Against this background, we propose **
+
+Of particular interest in the context of our work is *sb et al[]*"	
+
+this work represents the first of its kind for learning a sparse model with
+
+resource-constrained settings where efficiency is of paramount importance. 
+
 which is crude and
 
 sth .. '''paved the way''' for extensive research in the area
