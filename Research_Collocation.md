@@ -299,3 +299,45 @@ Our goal is twofold: firstly, we seek to address ...; secondly, ....
 
 To best undertake our review work, we designed a taxonomy (Figure 2) following the different, but not necessarily sequential, steps involved in the study of ...
 documents:
+
+
+I share a similar career arc to Ms. Zamiri’s 
+
+owing to 
+
+
+## From War & Peace by Tolstoy 
+
+During the awkward silence that ensued, Anna invited Prince Vasili to ..
+
+Naturally enough, ...
+
+they wait for a, b, c, ..., and like matters.
+
+there was a soiree, the chief feature of which was to be the reading of a letter from
+
+Not less than 7 times she copied ...
+
+Became so Firmly established that ...
+
+Gaining the reputation of a charming woman
+
+She had but one thought: ...
+
+Looks at Natasha as one looks at a wall
+
+Try to use more every verse question for a conditional sentence like: should you need more information, has she not been assured that this,
+
+Prince and you liked meeting someone not of the conventional society *stamp*. And such was Natasha.
+
+She was at the height of bliss when one becomes completely kind and good and doesn't believe in the possibility of evil and happiness or sorrow
+
+And so they ought all to be happy
+
+Anatole, Who was as handsome at close quarters as at a distance, ...
+
+In spite of this or rather because of it
+
+After staying but a short time, he went
+
+But an irresistible impulse drew her forward
