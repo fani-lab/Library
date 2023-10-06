@@ -4,14 +4,15 @@
 ## Proposal
 
 ### Committee Members
-MSc: Internal Reader (SCS), External Reader (UWindsor, cannot be an outsider), Chair (only for defence)
-PhD: Internal Reader (SCS), External Reader (UWindsor), Outside Reader (Another University), Chair (only for defence)
+**MSc:** Internal Reader (SCS), External Reader (UWindsor, cannot be an outsider), Chair (only for defence)
+
+**PhD:** Internal Reader (SCS), External Reader (UWindsor), Outside Reader (Another University), Chair (only for defence)
 
 1- Create a list of candidates
 
 2- Discuss the list with Hossein
 
-3- Send an invitation email to the top 1, CC Hossein, like:
+3- Send an invitation email to the top 1, CC `Hossein`, like:
 
 > Don't forget to attach the paper
 
