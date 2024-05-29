@@ -72,29 +72,29 @@ When agreed on the date-time slot, there are two forms (one pdf and one word doc
 
 8- Pre-proposal
 
-> Have 2-3 mock presentations prior to your proposal, esp., one presentation to Hossein.
+> Have 2-3 **mock presentations** prior to your proposal, esp., one presentation to Hossein.
 
-> Send the slides 1-3 days before the proposal with a date-time and location reminder to the committee members.
+> Send the slides 1-3 days before the proposal with a date-time and location **reminder to the committee members**.
 
-> Print out your presentation slides to the committee members
+> **Print out your presentation** slides, 2-4 slides per page, to the committee members
 
 > Do the presentation between 20 to 30 minutes. No strict min/max limitation though.
 
-> Don't forget to mention your achievements on your slides, including:
+> Don't forget to mention **your achievements** on your slides, including:
 
-> Awards you received like UWill Discover, IDeA, CS Demo Day
+>> Awards you received like UWill Discover, IDeA, CS Demo Day
 
-> Mentorship for highschoolers and undergrad students. 
+>> Mentorship for highschoolers and undergrad students. 
 
-> Collaborations with other grad students like co-authorship in other research
+>> Collaborations with other grad students like co-authorship in other research
 
-> Accepted Papers
+>> Accepted Papers
 
-> Codeline in github. Open the link and browse the codeline.
+>> Codeline in github. Open the link and browse the codeline.
 
-> What else ...
+>> What else ...
 
-> Be at the proposal location at least 15 minutes earlier to prevent any issues with connecting.
+> Be at the proposal location **at least 15 minutes earlier** to prevent any issues with connecting.
 
 ## Proposal Day
 
@@ -118,7 +118,7 @@ Do the same procedure for all committee members, find an overlap between their a
 
 2- Securing a Defense Chair:
 
-After finilazing the proposed date/dates for the defense, prepare a list of suggested chairs and go over it with Hossein. After making the choice, you can send an email as follows with your suggested date/time:
+After finalizing the proposed date/dates for the defence, prepare a list of suggested chairs and go over it with Hossein. After making the choice, you can send an email as follows with your suggested date/time:
 ```
 Dear Prof./Dr. Lastname,
 I hope this message finds you well. I am Firstname Lastname, a student pursuing Master's/PhD in Computer Science at the University of Windsor, [Canada], with a specialization in the Artificial Intelligence Stream, under the supervision of Dr. Hossein Fani. I am writing this message to kindly request your assistance as a defense chair for my MSc/PhD thesis defense.
