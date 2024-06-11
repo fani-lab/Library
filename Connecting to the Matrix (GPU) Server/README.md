@@ -6,6 +6,7 @@ This guide outlines some of the easiest ways to connect to the Matrix (GPU) serv
 
 ## Ways to connect remotely via SSH
 
+- [Connecting to the Matrix (GPU) Server](#connecting-to-the-matrix-gpu-server)
   - [Ways to connect remotely via SSH](#ways-to-connect-remotely-via-ssh)
     - [via Visual Studio Code (VSCode) using an extension](#via-visual-studio-code-vscode-using-an-extension)
     - [via Windows Terminal](#via-windows-terminal)
@@ -30,7 +31,7 @@ This is my favourite method as it's quite simple and also gives you the ability 
 
 Once connected, you can use the file explorer to select your base folder for this session by going to the explorer tab and selecting a directory as shown below.
 
-![Explorer View](screenshots/explorer-view.jpg)
+![Explorer View](screenshots/explorer-view.png)
 
 
 **Benefit**: This method provides the closest experience to local development since all your development tools and extensions from VSCode are available.
