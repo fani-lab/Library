@@ -14,7 +14,7 @@ This guide outlines some of the easiest ways to connect to the Matrix (GPU) serv
 
 ### via Visual Studio Code (VSCode) using an extension
 
-This is my favourite method as it's quite simple and as well as gives you the ability to view the server's directories in the same way you'd normally see your files in the file explorer panel in VSCode as if you're working locally.
+This is my favourite method as it's quite simple and also gives you the ability to view the server's directories in the same way you'd normally see your files in the file explorer panel in VSCode as if you're working locally.
 
 1. In VSCode's extension market, search and install an extension called **Remote - SSH** by Microsoft
 2. Once the extension is installed, click the two angled brackets at the bottom left corner of your VSCode
@@ -48,7 +48,7 @@ Once connected, you can use the file explorer to select your base folder for thi
 [Download PuTTY - a free SSH and telnet client for Windows](https://putty.org/)
 
 1. Launch PuTTY
-2. In the Host Name box, enter the IP address and username in the format of `username@MatrixServerIPAddress` and keep port at 22 and connection type as SSH and click **Open**
+2. In the Host Name box, enter the IP address and username in the format of `username@MatrixServerIPAddress` and keep the port at 22, and the connection type as SSH and click **Open**
 > ![PuTTY Step 2](screenshots/putty-2.jpg)
 3. On the next prompt, enter the Matrix server's password and press enter
 
@@ -69,4 +69,4 @@ Once connected, you can use the file explorer to select your base folder for thi
 1. When asked to trust the identity on first connect, select **Accept**
 2. On the next prompt, enter the Matrix server's password and press enter
 3.  On subsequent connections, this SSH session should now be available under the **User sessions** panel
-![MobaXterm Step 9](screenshots/mobaxterm-9.jpg)
+> ![MobaXterm Step 9](screenshots/mobaxterm-9.jpg)
