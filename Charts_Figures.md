@@ -39,12 +39,14 @@ https://dl.acm.org/doi/pdf/10.1145/3555114
 
 ![image](https://github.com/fani-lab/Library/assets/8619934/61a6b826-99d9-46a6-a73f-ba6378ded965)
 
-**Golden Methods to Visualize Skewed Data
-**
-https://medium.com/@yuanbo.faith/golden-methods-to-visualize-data-with-skewed-distribution-13f0b2a0db99
-
-
 ![charts](https://user-images.githubusercontent.com/8619934/234727748-482abe25-8eb2-41b7-b163-15b95759353e.JPG)
 
 <img width="327" alt="Screenshot 2023-03-22 at 12 39 24 PM" src="https://github.com/fani-lab/Library/assets/8619934/2390c863-23ed-4113-a5d0-43f00f23c546">
+
+
+**Golden Methods to Visualize Skewed Data
+**
+
+https://medium.com/@yuanbo.faith/golden-methods-to-visualize-data-with-skewed-distribution-13f0b2a0db99
+
 
