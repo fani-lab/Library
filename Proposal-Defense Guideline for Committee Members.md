@@ -221,7 +221,24 @@ MSc Student at the University of Windsor
 - Bring a bottle of water
 - Extra pens
 
+6- Guidelines of Attendance at Major Paper, Thesis and Dissertation Defense
+This section is filled in by the letter provided by Monique ([csgradinfo@uwindsor.ca](mailto:csgradinfo@uwindsor.ca)), which she received it officially from the Faculty of Graduate Studies. Following is a copy of the letter that was shared with us.
 
+Minimum requirements for membership on final committees are as follows:
+| | Master's Major Paper | Master's Thesis | Doctoral Dissertation |
+| - | --------------------- | ---------------- | -------------------- |
+| Defense Chair | | 1 | 1 |
+Advisor(s) | 1 (chair) | 1 | 1 |
+| Program Reader | 1 | 1 | 2 |
+| Outside Program Reader | | 1 | 1 |
+| External Examiner | | | 1 |
 
+Given that the defense of the major paper/thesis/dissertation is the culmination of the student’s research work and it is important that it be presented and examined properly for quality control purposes, the Chair of the Defense should use the following conditions to determine if the defense may proceed:
 
+The defense should take place on the University of Windsor campus.
+- The student and Defense Chair must be physically present.
+- A minimum of two committee members must be physically present.
+- At most one committee member may be absent (not physically or virtually present), and the absent member cannot be the External Examiner.  
+- At most two committee members may be virtually present.
 
+Note that according to the calendar, the External Examiner must be present in order for her/his vote to veto positive unanimity by the rest of the committee. The chair is non‐voting.
