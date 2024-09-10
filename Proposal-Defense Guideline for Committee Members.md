@@ -70,6 +70,12 @@ When agreed on the date-time slot, there are two forms (one pdf and one word doc
 [Master's Thesis / Doctoral Dissertation Committee Form: Co-Supervisor](http://www.uwindsor.ca/graduate-studies/sites/uwindsor.ca.graduate-studies/files/masters_and_doctoral_committee_fillable_form_-_co.pdf)
 [Master's Thesis / Doctoral Dissertation Committee Form: Sole Supervisor](http://www.uwindsor.ca/graduate-studies/sites/uwindsor.ca.graduate-studies/files/masters_and_doctoral_committee_fillable_form_-_sole.pdf)
 
+To obtain the signitures, send an email to committee members one at a time, supervisor >> internal reader >> external reader
+
+> Afterward, send the signed forms and a pdf file of email threads from the committee members, showing the agreed time, to CSGRADINFO@uwindsor.ca, asking to fix the time and **location**.
+
+> When the time and location have been confirmed by the graduate secratory, send a single email to all faculty members, CC CSGRADINFO@uwindsor.ca, to announce the time and location.
+
 8- Pre-proposal
 
 > Have 2-3 **mock presentations** prior to your proposal, esp., one presentation to Hossein.
