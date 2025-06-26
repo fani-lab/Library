@@ -43,6 +43,8 @@ rank atop of the other., Overlook, Fall short, Incorporate, Employ, Leverage<spa
 
 ## Phrases
 
+to remedy the above problems.
+
 has achieved state-of-the art performance by capitalizing on large general-purpose pretrained language models
 
 Existing approaches to * suffer from a lack of efficiency in model size and computational requirements, limiting their applicability
